@@ -1,0 +1,46 @@
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title> Login -PEAKY BLINDERS </title>
+        <link rel="stylesheet" href="style.css">
+        <script  src="pb.js"></script>
+        <style>
+            body {
+                background: linear-gradient(black, white);
+            }
+            </style>
+    </head>
+    <body>
+        <div class="nav">
+            <a href="dashboard.html">Dashboard</a>
+            <a class="active" href="login.html">Login</a>
+        </div>
+        <!-- Main div code -->
+	    <div id="main">
+        <div class="h-tag">
+            <img src="img/login.png" style="width:100%">
+        </div>
+        <!-- Login box -->
+        <div class="login">
+        <table cellspacing="2" align="center" cellpadding="8" border="0">
+        <tr>
+        <td>Enter User Name :</td>
+        <td><input type="text" placeholder="Enter user name here" id="email" class="tb" /></td>
+        </tr>
+        <tr>
+        <td>Enter Password :</td>
+        <td><input type="password" placeholder="Enter Password here" id="pwd1" class="tb" /></td>
+        </tr>
+        <tr>
+        <td></td>
+        <td>
+        <input type="submit" value="Reset" onclick="clearFunc()" class="btn" />
+        <input type="submit" value="Login" class="btn" onClick="login()" /></td>
+        </tr>
+        </table>
+        </div>
+           <!-- login box div ending here.. -->
+        </div>
+        <!-- Main div ending here... -->
+    </body>
+    </html>
