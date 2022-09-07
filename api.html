@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+        <title> SHELBY COMPANY LTD. </title>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+       
+        <script src="fashion.js"></script>
+        <link rel="stylesheet" href="api.css"> 
+    </head>
+    <body>
+        <div id="api">
+            <div class="nav1">
+                <input type="submit" value="Logout" class="btn" onClick="logout()" /></td>
+               
+            </div>
+            <img src="img/api2.jpg" style="width:100%">
+
+        </div>
+        <div class="container" >
+            
+           
+            <div class="centered" >
+                
+                <div id="main" >
+                    <table cellspacing="10" align="center" cellpadding="8" border="0">
+                    <tr>
+                    <td>id</td>
+                    <td><input type="text" placeholder="Enter product id" id="id" class="tb" /></td>
+                    </tr>
+                    <tr>
+                    <td>type</td>
+                    <td><input type="text" placeholder="Enter product type" id="type" class="tb" /></td>
+                    </tr>
+                    <tr>
+                    <td>item_name</td>
+                    <td><input type="text" placeholder="Enter product name" id="item_name" class="tb" /></td>
+                    </tr>
+                    <tr>
+                    <td>item_price</td>
+                    <td><input type="text" placeholder="Enter product price" id="item_price" class="tb" /></td>
+                    </tr>
+                    <tr>   
+                    <td></td>
+                    <td>
+                    <input type="submit" value="Get"  class="btn " onClick="saveProduct()" />
+                    <input type="submit" value="Insert"  class="btn " onClick="getProduct()" />
+                    <input type="submit" value="Update"  class="btn " onClick="update()" />
+                    <input type="submit" value="Delete"  class="btn " onClick="del()" /></td>
+                    </tr>
+                    </table>
+                </div>
+                <br/>
+                <h3> SHELBY'S LIST : </h3>
+                <br/>
+                <ul id="fashion"></ul>
+                
+
+
+            </div>
+        </div>
+
+            
+       
+       
+        
+        
+        
+    </body>
+</html>
